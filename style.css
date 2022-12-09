@@ -1,0 +1,91 @@
+/*Test*/
+h1{
+    text-align: center;
+    color: white;
+}
+body{
+    background-image: url(kepek/hatter.jpg);
+}
+main{
+    background-color: white;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a a a"
+    "b c d"
+    "e e e"
+    ;
+    margin: auto;
+}
+header{
+    grid-area: a;
+    padding: 28px;
+    background-image: url(kepek/fejlec.jpg);
+}
+
+footer{
+    grid-area: e;
+    text-align: center;
+    background-color: blue;
+}
+
+/*Linkek*/
+nav{
+    grid-area: b;
+    margin: 20px;
+}
+nav a{
+    background-color: blue;
+    border-radius: 5px;
+    border: 1px solid blue;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+nav, ul, li{
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px;
+}
+
+/*Vers*/
+aside{
+    grid-area: d;
+    border: 1px solid lightskyblue;
+    padding: 20px;
+}
+
+/*Táblázat*/
+table {
+    margin: 20px;
+}
+td, th{
+    border-bottom:1px solid lightskyblue;
+}
+article a{
+    color: red;
+    grid-area: c;
+}
+tbody tr:nth-child(even){
+    background-color: lightblue;
+}
+thead tr:nth-child(odd){
+    background-color: lightblue;
+}
+
+@media only screen and (max-width:500px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "a "
+        "b "
+        "c "
+        "d "
+        "e "
+        ;
+    }
+}
