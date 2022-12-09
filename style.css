@@ -8,9 +8,9 @@ body{
 }
 main{
     background-color: white;
-    max-width: 900px;
+    max-width: 1000px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
     grid-template-areas: 
     "a a a"
     "b c d"
@@ -36,6 +36,8 @@ nav{
     margin: 20px;
 }
 nav a{
+    display: block;
+    text-align: center;
     background-color: blue;
     border-radius: 5px;
     border: 1px solid blue;
